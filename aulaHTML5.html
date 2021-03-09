@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html>
-
-<header>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale:1-0">
-    <h1>Recursos do HTML5</h1>
-</header>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale:1-0">
+<h1>Recursos do HTML5</h1>
 
 <body>
-    <div>
-        <video height="240" width="320" controls>
-            <source src="cidade.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div>
-        <audio controls>
-            <source src="audio/music.mp3" type="audio/mp3">
-        </audio>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Contato</a></li>
+                <li> <a href="#">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <div>
+            <video height="240" width="320" controls>
+                <source src="cidade.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <audio controls>
+                <source src="music.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <figure>
+            <img src="ricefield.jpg" alt="campo de arroz">
+            <figcaption> O lindo campo de arroz.... </figcaption>
+            <!--Imagem com legenda-->
+        </figure>
+        <div>
+            <h3>Coloque seu nome,para receber as novidades</h3>
+            <form>
+                <label>Seu email</label>
+                <input type="email" name="email" required placeholder="digite seu email" autofocus />
+                <!--autofocs faz com que o curso vai automaticamente no campo,type email faz uma pequena validação de eamil--->
+                <label>Seu nome:</label>
+                <input type="text" name="nome" required placeholder="coloque seu nome" />
+                <input type="submit" name="Enviar" />
+                <!---Com a tag required valido o campo input sem precisar javascript-->
+            </form>
+        </div>
+        <div>
+            <p contenteditable="true">Este e um paragrafo</p>
+            <!--Com essa tag pode editar de forma ao vivo--->
+        </div>
+    </article>
+    <aside>
+        <p>Confira nossos produtos<a href="#">Clicando aqui</a></p>
+    </aside>
+    <details>
+        <summary>Cachorro</summary>
+        <p>E um maniferio de 4 patas</p>
+    </details>
+    <details open="open">
+        <!--Aqui o detalhe ja fico precionado automatico-->
+        <summary>Gato</summary>
+        <p>E um maniferio de 4 patos</p>
+        <!--Details e a seta de ancora,apertado mostra o detalhe-->
+    </details>
+    <p>Animais</p>
+    <input list="animais" name="aniamis" />
+    <datalist id="animais">
+        <!--id tem que bater com list-->
+        <option value="cavalo"></option>
+        <option value="gato"></option>
+        <option value="cachorro"></option>
+    </datalist>
+    <p>Barra de loading</p>
+    <progress value="63" max="100">
+        <footer>
+            <p>Rodape</p>
+        </footer>
 </body>
 
 </html>
